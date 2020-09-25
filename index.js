@@ -9,6 +9,10 @@ app.get('/api/courses', (req, res) => {
     res.send([1, 2, 3])
 })
 
+app.get('/api/courses/:id', (req, res) => {
+    res.send(req.params.id)
+})
+
 // run command line to set a env var:
 // mac: export PORT=5000
 // win: set PORT=5000
